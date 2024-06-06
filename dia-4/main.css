@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(40,9,124,1) 0%, rgba(56,9,121,1) 47%, rgba(115,0,255,1) 100%);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#formulario {
+    display: flex;
+    padding: 30px 15px;
+    border-radius: 15px;
+    background-color: rgba(196, 194, 240, 0.219);
+    color: #fff;
+}
+
+#btn {
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    opacity: 85%;
+    margin-bottom: 4px;
+}
+
+#btn:hover{
+    opacity: 100%;
+}
+
+#input-block input, label {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#input-block input, span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+#button-p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dicas {
+    display: flex;
+    align-items:baseline;
+    margin-top: 0.5em;
+}
+
+#dicas p {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+#divDica {
+    display: flex;
+    justify-content: space-between;
+}
+
+#divDica li {
+    display: flex;
+
+}
+
+
+#divDica p {
+    margin-left: 1em;
+}
+
+#buttonReset {
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+    justify-content: end;
+    display: flex;
+    opacity: 85%;
+}
+
+#buttonReset:hover {
+    opacity: 100%;
+}
+
+
+
+
+@media screen and (max-width:1023px){
+    #formulario {
+        max-width: 600px;
+    }
+
+    #input-block label {
+        font-size: 20px;
+    }
+    
+    #formulario input{
+        width: 100%;
+        height:35px;
+    }
+    
+    #dicas {
+        display: block;
+    }
+    
+    #dicas p {
+        margin-top: 1em;
+    }
+    
+    #btn {
+        padding: 10px 100px;
+    }
+    
+    #button-p{
+        display: flex;
+        align-items: baseline;
+    }
+    
+}
+
+@media screen and (max-width:767px){
+
+    #formulario {
+        max-width: 350px;
+        width: 100%;
+    }
+    
+    #btn {
+        padding: 10px 120px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #button-p{
+        display: block;
+        align-items: baseline;
+    }
+    
+    }
